@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quaderno-webapp/static/css/main.5fc348a8.chunk.css",
+    "main.js": "/quaderno-webapp/static/js/main.de01db64.chunk.js",
+    "main.js.map": "/quaderno-webapp/static/js/main.de01db64.chunk.js.map",
+    "runtime-main.js": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js",
+    "runtime-main.js.map": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3c101cdc.chunk.js": "/quaderno-webapp/static/js/2.3c101cdc.chunk.js",
+    "static/js/2.3c101cdc.chunk.js.map": "/quaderno-webapp/static/js/2.3c101cdc.chunk.js.map",
+    "index.html": "/quaderno-webapp/index.html",
+    "precache-manifest.f1d46f29881e80c5139bff99c6106ec8.js": "/quaderno-webapp/precache-manifest.f1d46f29881e80c5139bff99c6106ec8.js",
+    "service-worker.js": "/quaderno-webapp/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.5fc348a8.chunk.css.map": "/quaderno-webapp/static/css/main.5fc348a8.chunk.css.map",
+    "static/js/2.3c101cdc.chunk.js.LICENSE.txt": "/quaderno-webapp/static/js/2.3c101cdc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2f8eb25.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3c101cdc.chunk.js",
+    "static/css/main.5fc348a8.chunk.css",
+    "static/js/main.de01db64.chunk.js"
+  ]
+}
