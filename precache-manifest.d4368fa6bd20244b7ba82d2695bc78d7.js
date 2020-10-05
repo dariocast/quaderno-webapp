@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "684025529716d1162c79bad50b4847ad",
+    "revision": "646141906eec953f6ffb02d42ea92ca7",
     "url": "/quaderno-webapp/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "42bf304a1652b06d334d",
+    "revision": "b179c1cf5ffaff31c202",
     "url": "/quaderno-webapp/static/css/main.5fc348a8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quaderno-webapp/static/js/2.3c101cdc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42bf304a1652b06d334d",
-    "url": "/quaderno-webapp/static/js/main.de01db64.chunk.js"
+    "revision": "b179c1cf5ffaff31c202",
+    "url": "/quaderno-webapp/static/js/main.694741c1.chunk.js"
   },
   {
     "revision": "e4080f7ccb011facfb97",
