@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/quaderno-webapp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/quaderno-webapp/static/js/main.b9f9d37a.chunk.js",
-    "main.js.map": "/quaderno-webapp/static/js/main.b9f9d37a.chunk.js.map",
+    "main.js": "/quaderno-webapp/static/js/main.f3df9770.chunk.js",
+    "main.js.map": "/quaderno-webapp/static/js/main.f3df9770.chunk.js.map",
     "runtime-main.js": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js",
     "runtime-main.js.map": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.3daf6b27.chunk.js": "/quaderno-webapp/static/js/2.3daf6b27.chunk.js",
     "static/js/2.3daf6b27.chunk.js.map": "/quaderno-webapp/static/js/2.3daf6b27.chunk.js.map",
     "index.html": "/quaderno-webapp/index.html",
-    "precache-manifest.f358a5f12804c557c919b810bf44267d.js": "/quaderno-webapp/precache-manifest.f358a5f12804c557c919b810bf44267d.js",
+    "precache-manifest.33425c9c0eb75349ea01cbca6f732f65.js": "/quaderno-webapp/precache-manifest.33425c9c0eb75349ea01cbca6f732f65.js",
     "service-worker.js": "/quaderno-webapp/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/quaderno-webapp/static/css/main.5ecd60fb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.3daf6b27.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.b9f9d37a.chunk.js"
+    "static/js/main.f3df9770.chunk.js"
   ]
 }
