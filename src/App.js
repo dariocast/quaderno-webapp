@@ -1,43 +1,51 @@
 import React, {useState} from 'react';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import QTJumbo from "./components/QTJumbo/qt-jumbo";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import Dettaglio from "./pages/Dettaglio";
 import NuovaPartita from "./pages/NuovaPartita";
 import ListaPartite from "./pages/ListaPartite";
 import PrivateRoute from "./components/PrivateRoute";
 import {AuthContext} from "./contexts/auth";
+import Admin from "./pages/Admin";
+import {Nav, Navbar} from "react-bootstrap";
 
 function App() {
 
-    const existingToken = JSON.parse(localStorage.getItem("token"));
+    const existingToken = localStorage.getItem("token");
     const [authToken, setAuthToken] = useState(existingToken);
 
     const setToken = (data) => {
-        localStorage.setItem("token", JSON.stringify(data));
-        setAuthToken(data);
+        if (data) {
+            localStorage.setItem("token", JSON.stringify(data));
+            setAuthToken(data);
+        } else {
+            localStorage.removeItem("token");
+            setAuthToken(false);
+        }
     };
 
     return (
         <AuthContext.Provider value={{ authToken, setAuthToken:setToken }}>
             <Router>
-                <QTJumbo title="Quaderno Torneo"/>
-                <div>
-                    <ul>
-                        <li>
-                            <Link to="/">Home Page</Link>
-                        </li>
-                        <li>
-                            <Link to="/lista">Partite</Link>
-                        </li>
-                    </ul>
-                    <Route exact path="/" component={Home}/>
-                    <PrivateRoute path="/lista" component={ListaPartite}/>
-                    <Route path="/login" component={Login}/>
-                    <PrivateRoute path="/dettaglio" component={Dettaglio}/>
-                    <PrivateRoute path="/inserisci" component={NuovaPartita}/>
-                </div>
+
+                <Navbar bg="success" expand="lg">
+                    <Navbar.Brand href="/">Quaderno Torneo</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/admin">Admin</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+
+                <Route exact path="/" component={Home}/>
+                <Route path="/lista" component={ListaPartite}/>
+                <Route path="/login" component={Login}/>
+                <PrivateRoute path="/admin" component={Admin}/>
+                <PrivateRoute path="/dettaglio" component={Dettaglio}/>
+                <PrivateRoute path="/inserisci" component={NuovaPartita}/>
             </Router>
         </AuthContext.Provider>
     );

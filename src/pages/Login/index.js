@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Button, Container, Row, Col, Form, Alert} from "react-bootstrap";
+import {Alert, Button, Col, Container, Form, Row} from "react-bootstrap";
 import sha1 from 'js-sha1'
 import {BASEURL} from "../../services/constants";
 import axios from "axios";
@@ -7,17 +7,18 @@ import {useAuth} from "../../contexts/auth";
 import {Redirect} from "react-router-dom";
 
 
-
-function Login() {
+function Login(props) {
     const [username, setUsername] = useState(localStorage.getItem('u'));
     const [password, setPassword] = useState(localStorage.getItem('p'));
     const [isLoggedIn, setLoggedIn] = useState(false);
     const [isError, setIsError] = useState(false);
-    const { setAuthTokens } = useAuth();
+    const {setAuthToken} = useAuth();
     const [ricorda, setRicorda] = useState(false);
 
+    const referer = props.location.state.referer || '/';
+
     if (isLoggedIn) {
-        return <Redirect to="/" />;
+        return <Redirect to={referer}/>;
     }
 
     return (
@@ -46,6 +47,7 @@ function Login() {
                                 type="password"
                                 placeholder="Password"
                                 value={password ? password : ''}
+
                                 required
                             />
                         </Form.Group>
@@ -57,12 +59,13 @@ function Login() {
                                 label="Ricordami"
                             />
                         </Form.Group>
-                        <Button type="submit" value="Submit" variant="outline-primary" onClick={handleLogin}>Login</Button>
+                        <Button type="submit" value="Submit" variant="outline-primary"
+                                onClick={handleLogin}>Login</Button>
                     </Form>
                 </Col>
             </Row>
             <Row>
-                { isError && <Alert variant="danger">Username e/o password errati</Alert> }
+                {isError && <Alert variant="danger">Username e/o password errati</Alert>}
             </Row>
         </Container>
     );
@@ -74,20 +77,27 @@ function Login() {
                 localStorage.setItem('u', username);
                 localStorage.setItem('p', password);
             }
-            const pwdHashed = sha1(password);
-            axios.post(BASEURL+"/admin/auth.php",{
-                username,
-                pwdHashed
-            }).then(result => {
-                if (result.status === 200) {
-                    console.log(result.data);
-                    setAuthTokens(result.data);
-                    setLoggedIn(true);
-                } else {
-                    console.log("error");
-                    setIsError(true);
+            axios.post(
+                BASEURL + "/admin/auth.php",
+                {
+                    username: username,
+                    password: sha1(password)
+                },
+                {
+                    headers: {'Content-Type': 'application/json'}
                 }
-            }).catch(e => {
+            )
+                .then(result => {
+                    if (result.status === 200) {
+                        console.log(result.data);
+                        setAuthToken(result.data);
+                        setLoggedIn(true);
+                    } else {
+                        console.log(result.data['message']);
+                        setIsError(true);
+                    }
+                }).catch(e => {
+                console.log(e);
                 setIsError(true);
             });
         }
