@@ -9,6 +9,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import {AuthContext} from "./contexts/auth";
 import Admin from "./pages/Admin";
 import {Nav, Navbar} from "react-bootstrap";
+import {BASEURL} from "./services/constants";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
 
     return (
         <AuthContext.Provider value={{ authToken, setAuthToken:setToken }}>
-            <Router>
+            <Router basename={BASEURL}>
 
                 <Navbar bg="success" expand="lg">
                     <Navbar.Brand href="/">Quaderno Torneo</Navbar.Brand>
