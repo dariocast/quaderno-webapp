@@ -1,7 +1,10 @@
 import React from "react";
+import {Container} from "react-bootstrap";
 
 function ListaPartite() {
-    return <h1>ListaPartite</h1>;
+    return (<Container>
+        <h2>ListaPartite</h2>
+    </Container>);
 }
 
 export default ListaPartite;
