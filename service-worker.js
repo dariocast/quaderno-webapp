@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/quaderno-webapp/precache-manifest.d4368fa6bd20244b7ba82d2695bc78d7.js"
+  "/quaderno-webapp/precache-manifest.8c68a16a3b614d3687339868cb26ff78.js"
 );
 
 self.addEventListener('message', (event) => {
