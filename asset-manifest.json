@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/quaderno-webapp/static/css/main.7c6c5c47.chunk.css",
-    "main.js": "/quaderno-webapp/static/js/main.fcc47d25.chunk.js",
-    "main.js.map": "/quaderno-webapp/static/js/main.fcc47d25.chunk.js.map",
+    "main.css": "/quaderno-webapp/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/quaderno-webapp/static/js/main.b9f9d37a.chunk.js",
+    "main.js.map": "/quaderno-webapp/static/js/main.b9f9d37a.chunk.js.map",
     "runtime-main.js": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js",
     "runtime-main.js.map": "/quaderno-webapp/static/js/runtime-main.e2f8eb25.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.b8e2e914.chunk.js": "/quaderno-webapp/static/js/2.b8e2e914.chunk.js",
-    "static/js/2.b8e2e914.chunk.js.map": "/quaderno-webapp/static/js/2.b8e2e914.chunk.js.map",
+    "static/js/2.3daf6b27.chunk.js": "/quaderno-webapp/static/js/2.3daf6b27.chunk.js",
+    "static/js/2.3daf6b27.chunk.js.map": "/quaderno-webapp/static/js/2.3daf6b27.chunk.js.map",
     "index.html": "/quaderno-webapp/index.html",
-    "precache-manifest.8c68a16a3b614d3687339868cb26ff78.js": "/quaderno-webapp/precache-manifest.8c68a16a3b614d3687339868cb26ff78.js",
+    "precache-manifest.f358a5f12804c557c919b810bf44267d.js": "/quaderno-webapp/precache-manifest.f358a5f12804c557c919b810bf44267d.js",
     "service-worker.js": "/quaderno-webapp/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/quaderno-webapp/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.7c6c5c47.chunk.css.map": "/quaderno-webapp/static/css/main.7c6c5c47.chunk.css.map",
-    "static/js/2.b8e2e914.chunk.js.LICENSE.txt": "/quaderno-webapp/static/js/2.b8e2e914.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/quaderno-webapp/static/media/pitch.c89518f9.jpg"
+    "static/css/main.5ecd60fb.chunk.css.map": "/quaderno-webapp/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.3daf6b27.chunk.js.LICENSE.txt": "/quaderno-webapp/static/js/2.3daf6b27.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e2f8eb25.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.b8e2e914.chunk.js",
-    "static/css/main.7c6c5c47.chunk.css",
-    "static/js/main.fcc47d25.chunk.js"
+    "static/js/2.3daf6b27.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b9f9d37a.chunk.js"
   ]
 }
